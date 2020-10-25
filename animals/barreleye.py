@@ -15,5 +15,3 @@ class Barreleye():
     def feed(self):
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
 
-		
-
