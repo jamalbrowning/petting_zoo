@@ -1,12 +1,10 @@
 from datetime import date
+from .Animal import Animal
 
-class Insect():
+class Insect(Animal):
     def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
+        super().__init__(name,species,food)
         self.shift = shift
-        self.date_added = date.today()
-        self.food = food
         self.walking = True
     
     def __str__(self):

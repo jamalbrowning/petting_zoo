@@ -14,3 +14,4 @@ from .pig import Pig
 from .sheep import Sheep
 from .snake import Snake
 from .whale import Whale
+from .Animal import Animal
