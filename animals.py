@@ -1,66 +1,28 @@
+from animals import Barreleye, Bird, Catfish, Donkey, Duck, Goat, Goldfish, Insect, King_Cobra, Kingsnake, Llama, Pig, Sheep, Snake, Whale
+from attractions import Petting_Zoo, Snake_Pit, Wetlands
 
+bassy = Barreleye('Bassy', 'fish', 'Morning', 'Fish chips')
+cotters = Bird('Cotters', 'shoebill', 'Evening', 'Bird Food')
+catty = Catfish('Catty', 'catfish', 'Afternoon', 'Fish Chips')
+dokay = Donkey('Dokay', 'amiatina', 'Morning', 'Donkey food')
+malaard = Duck('Malaard', 'mallard', 'Evening', 'Duck food')
+lebron = Goat('Lebron', 'goat', 'Afternoon', 'Goat food')
+goldie = Goldfish('Goldie', 'goldfish', 'Evening', 'Fish chips')
+scorpie = Insect('Scorpie', 'scorpion', 'Morning', 'Insect food') 
+moonshine = King_Cobra('Moonshine', 'snake', 'Afternoon', 'Snake food')
+kingsby = Kingsnake('Kingsby', 'snake', 'Morning', 'Snake food')
+llavya = Llama('Llavya', 'llama', 'Evening', 'Llama food')
+pinky = Pig('Pinky', 'Duroc pig', 'Afternoon', 'Pig food')
+shep = Sheep('Shep', 'sheep', 'Morning', 'Sheep food')
+anex = Snake('Anex', 'anaconda', 'Evening', 'Snake food')
+swain = Whale('Swain', 'Humpback', 'Afternoon', 'Whale food')
 
-from models import Barreleye, Bird, Catfish, Donkey, Duck, Goat, Goldfish, Insect, King_Cobra, Kingsnake, Llama, Pig, Sheep, Snake, Whale
+varmint_village = Petting_Zoo("Varmint Village", "Pet all you can!")
+reptilian_corner = Snake_Pit("Reptilian Corner", "Lots and Lots and Lots of Reptiles")
+the_wet_place = Wetlands("The Wet Place", "It's wet here.")
 
+varmint_village.add_animals([dokay,cotters,malaard,lebron,llavya,pinky,shep,swain])
+reptilian_corner.add_animals([scorpie,moonshine,kingsby,anex])
+the_wet_place.add_animals([catty,goldie,swain])
 
-def main():
-    bassy = Barreleye('Bassy', 'fish', 'Morning', 'Fish chips')
-    print(bassy)
-    bassy.feed()
-
-    cotters = Bird('Cotters', 'shoebill', 'Evening', 'Bird Food')
-    print(cotters)
-    cotters.feed()
-
-    catty = Catfish('Catty', 'catfish', 'Afternoon', 'Fish Chips')
-    print(catty)
-    catty.feed()
-
-    dokay = Donkey('Dokay', 'amiatina', 'Morning', 'Donkey food')
-    print(dokay)
-    dokay.feed()
-
-    malaard = Duck('Malaard', 'mallard', 'Evening', 'Duck food')
-    print(malaard)
-    malaard.feed()
-
-    lebron = Goat('Lebron', 'goat', 'Afternoon', 'Goat food')
-    print(lebron)
-    lebron.feed()
-
-    goldie = Goldfish('Goldie', 'goldfish', 'Evening', 'Fish chips')
-    print(goldie)
-    goldie.feed()
-
-    scorpie = Insect('Scorpie', 'scorpion', 'Morning', 'Insect food')
-    print(scorpie)
-    scorpie.feed()
-
-    	
-    moonshine = King_Cobra('Moonshine', 'snake', 'Afternoon', 'Snake food')
-    print(moonshine)
-    moonshine.feed()
-
-    kingsby = Kingsnake('Kingsby', 'snake', 'Morning', 'Snake food')
-    print(kingsby)
-    kingsby.feed()
-
-    llavya = Llama('Llavya', 'llama', 'Evening', 'Llama food')
-    print(llavya)
-    llavya.feed()
-
-    pinky = Pig('Pinky', 'Duroc pig', 'Afternoon', 'Pig food')
-    print(pinky)
-    pinky.feed()
-
-    shep = Sheep('Shep', 'sheep', 'Morning', 'Sheep food')
-    print(shep)
-    shep.feed()
-
-    anex = Snake('Anex', 'anaconda', 'Evening', 'Snake food')
-    print(anex)
-    anex.feed()
-
-    swain = Whale('Swain', 'Humpback', 'Afternoon', 'Whale food')
-    print(swain)
-    swain.feed()
+print(the_wet_place)
