@@ -1,12 +1,10 @@
 from datetime import date
+from .Animal import Animal
 
-class Goldfish():
+class Goldfish(Animal):
     def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
+        super().__init__(name,species,food)
         self.shift = shift
-        self.date_added = date.today()
-        self.food = food
         self.swimming = True
     
     def __str__(self):
@@ -14,6 +12,3 @@ class Goldfish():
 
     def feed(self):
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
-
-		
-

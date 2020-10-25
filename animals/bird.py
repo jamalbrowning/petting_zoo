@@ -1,12 +1,9 @@
 from datetime import date
-
-class Bird():
+from .Animal import Animal
+class Bird(Animal):
     def __init__(self, name, species, shift, food):
-        self.name = name
-        self.species = species
+        super().__init__(name,species,food)
         self.shift = shift
-        self.date_added = date.today()
-        self.food = food
         self.walking = True
     
     def __str__(self):
@@ -14,5 +11,3 @@ class Bird():
 
     def feed(self):
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}'
-		
-
