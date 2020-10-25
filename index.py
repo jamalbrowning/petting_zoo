@@ -1,7 +1,7 @@
 from animals import Barreleye, Bird, Catfish, Donkey, Duck, Goat, Goldfish, Insect, King_Cobra, Kingsnake, Llama, Pig, Sheep, Snake, Whale
 from attractions import Petting_Zoo, Snake_Pit, Wetlands
 
-bassy = Barreleye('Bassy', 'fish', 'Morning', 'Fish chips')
+bassy = Barreleye('Bassy', 'fish', 'Morning', 'Fish chips', 12345)
 cotters = Bird('Cotters', 'shoebill', 'Evening', 'Bird Food')
 catty = Catfish('Catty', 'catfish', 'Afternoon', 'Fish Chips')
 dokay = Donkey('Dokay', 'amiatina', 'Morning', 'Donkey food')
